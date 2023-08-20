@@ -221,7 +221,7 @@ export default function RoomPage() {
                 {/* Other ListItems */}
               </List>
             </Grid>
-            <Grid item xs={9}>
+            <Grid item xs={9} sx={{ p: 2 }}>
               <List
                 sx={{
                   height: "70vh",

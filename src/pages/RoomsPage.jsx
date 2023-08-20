@@ -35,14 +35,20 @@ export default function RoomsPage() {
   console.log(rooms);
 
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+      }}
+    >
       <h1>Rooms</h1>
       <ul>
-        {rooms.map((room, index) => (
-          <li key={index}>
+        {rooms?.map((room, index) => (
+          <li key={index} style={{ listStyle: "none" }}>
             <Button
-              variant="outlined"
-              sx={{ mb: 1, color: index % 2 === 0 ? "black" : "cyan" }}
+              variant="contained"
+              sx={{ mb: 1 }}
               onClick={() => handleRoomButtonClick(room)}
             >
               {room}

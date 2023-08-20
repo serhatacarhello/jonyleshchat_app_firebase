@@ -4,6 +4,7 @@ import ChatBox from "./pages/chat/ChatBox";
 import HomePage from "./pages/HomePage";
 import RoomPage from "./pages/RoomPage";
 import RoomsPage from "./pages/RoomsPage";
+import Profile from "./pages/Profile";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/chat" element={<ChatBox />} />
           <Route path="/room" element={<RoomPage />} />
           <Route path="/rooms" element={<RoomsPage />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </BrowserRouter>
     </>
